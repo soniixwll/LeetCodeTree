@@ -2,13 +2,16 @@
 from typing import Optional
 
 class TreeNode:
+    """Class TReeNode"""
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
         self.right = right
 
 class Solution:
+    """Class fot evaluating the Tree"""
     def evaluateTree(self, root: Optional[TreeNode]) -> bool:
+        """Function that evaluates the tree using recursion"""
         if root.val in (0, 1):
             return bool(root.val)
 
